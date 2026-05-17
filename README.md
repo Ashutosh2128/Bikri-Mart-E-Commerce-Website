@@ -7,7 +7,8 @@ The project is built with a focus on **clean architecture, reusable components, 
 ---
 ## Live Demo
 
-**Website:** https://bikri-mart.netlify.app/ 
+**Website:** https://bikri-mart.netlify.app/
+
 **GitHub Repository:** https://github.com/Ashutosh2128/Bikri-Mart-E-Commerce-Website
 
 ## Screenshots
