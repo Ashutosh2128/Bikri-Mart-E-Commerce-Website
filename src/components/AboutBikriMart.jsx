@@ -1,7 +1,7 @@
 import React from "react";
 import aboutImg from "/image/ecompost.png";
 
-const AboutBhusanMart = () => {
+const AboutBikriMart = () => {
   return (
     <section
       className="
@@ -165,4 +165,4 @@ const AboutBhusanMart = () => {
   );
 };
 
-export default AboutBhusanMart;
+export default AboutBikriMart;
