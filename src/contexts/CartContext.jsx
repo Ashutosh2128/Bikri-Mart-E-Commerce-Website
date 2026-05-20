@@ -1,7 +1,8 @@
 import React, { createContext, useState, useEffect, useContext } from "react";
 import { AuthContext } from "./AuthContext";
 import { ProductContext } from "./ProductContext";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 export const CartContext = createContext();

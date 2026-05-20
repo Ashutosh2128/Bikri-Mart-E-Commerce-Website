@@ -12,8 +12,9 @@ import SidebarProvider from "./contexts/SidebarContext";
 import CartProvider from "./contexts/CartContext";
 import AuthProvider from "./contexts/AuthContext";
 
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
+import { Toaster } from "react-hot-toast";
 
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -32,9 +33,10 @@ root.render(
             {/* Cart relies on product data, so it is nested here */}
             <CartProvider>
               <App />
+              <Toaster />
 
               {/* Single global toast container for notifications */}
-              <ToastContainer
+              {/* <ToastContainer
                 position="top-right"
                 autoClose={2500}
                 hideProgressBar={false}
@@ -43,7 +45,7 @@ root.render(
                 pauseOnHover
                 draggable
                 theme="dark"
-              />
+              /> */}
             </CartProvider>
           </SidebarProvider>
         </ProductProvider>
