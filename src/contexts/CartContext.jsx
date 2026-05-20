@@ -56,8 +56,10 @@ const CartProvider = ({ children }) => {
 
       toast.success("Item quantity increased");
     } else {
-      setCart([...cart, { ...product, amount: 1 }]);
-      toast.success("Item added to cart");
+      if(product.stock > 0) {
+        setCart([...cart, { ...product, amount: 1 }]);
+        toast.success("Item added to cart");
+      }
     }
   };
 
